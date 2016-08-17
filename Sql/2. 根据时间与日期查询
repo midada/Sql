@@ -1,0 +1,13 @@
+＃ 根据时间与日期查询
+
+### 1. 查询当天数据
+
+```
+  select * from tables where date(CreateTime)=curdate();
+```
+
+```
+  select * from tables where to_days(CreateTime)=to_days(now());
+```
+
+### 2. 查询本周数据
